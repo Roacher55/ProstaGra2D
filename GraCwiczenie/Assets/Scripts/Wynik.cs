@@ -6,6 +6,7 @@ public class Wynik : MonoBehaviour
 {
     // Start is called before the first frame update
     float wynik;
+    public static string tekst;
     void Start()
     {
         wynik = 0;
@@ -17,5 +18,16 @@ public class Wynik : MonoBehaviour
     {
         wynik = wynik + 0.001f;
         this.gameObject.GetComponent<TextMesh>().text = "Wynik: " + wynik;
+        tekst = textWynik();
+    }
+
+    public float ZwrocWynik()
+    {
+        return wynik;
+    }
+
+   public string textWynik()
+    {
+       return this.gameObject.GetComponent<TextMesh>().text = "Wynik: " + wynik;
     }
 }
