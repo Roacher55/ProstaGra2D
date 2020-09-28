@@ -12,7 +12,7 @@ public class Pomoc : MonoBehaviour
     Scene scene;
     void Start()
     {
-        
+        Application.targetFrameRate = 30;
         scene = SceneManager.GetActiveScene();
     }
 
